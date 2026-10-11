@@ -134,6 +134,101 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   width:100%;
 }
 
+
+/* ===== FLOAT IMAGES (alignright / alignleft) ===== */
+.article-wrap .alignright { float:right; margin:0 0 20px 28px; max-width:45%; }
+.article-wrap .alignleft  { float:left;  margin:0 28px 20px 0; max-width:45%; }
+.article-wrap .aligncenter{ display:block; margin:24px auto; }
+.article-wrap .wp-caption  { max-width:45%; }
+.article-wrap .wp-caption.alignright { float:right; margin:0 0 20px 28px; }
+.article-wrap .wp-caption.alignleft  { float:left;  margin:0 28px 20px 0; }
+.article-wrap .wp-caption img { width:100%; }
+.article-wrap .wp-caption-text { font-size:.78rem; color:var(--mid); margin-top:6px; font-style:italic; }
+.article-wrap::after { content:''; display:table; clear:both; }
+
+/* ===== ARTICLE CARD GRID (body guide pages) ===== */
+.card-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin:32px 0;
+}
+.card-grid a {
+  display:block;
+  overflow:hidden;
+  border:2px solid var(--black);
+  transition:transform .2s,box-shadow .2s;
+  opacity:0;
+  transform:translateY(24px);
+}
+.card-grid a.visible {
+  opacity:1;
+  transform:translateY(0);
+  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
+}
+.card-grid a:hover {
+  transform:translateY(-4px) scale(1.02);
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.card-grid img { width:100%; display:block; }
+
+@media(max-width:680px){
+  .card-grid { grid-template-columns:1fr 1fr; }
+  .article-wrap .alignright,.article-wrap .alignleft { float:none; max-width:100%; margin:0 0 20px; }
+  .article-wrap .wp-caption.alignright,.article-wrap .wp-caption.alignleft { float:none; max-width:100%; margin:0 0 20px; }
+}
+
+/* ===== LOAD ANIMATION JS ===== */
+
+/* ===== FOOTER REDESIGN ===== */
+footer { background:var(--teal); color:var(--black); padding:0; }
+.footer-top {
+  max-width:1100px; margin:0 auto;
+  display:grid; grid-template-columns:2fr 1fr 1fr;
+  gap:40px; padding:52px 24px 40px;
+}
+.footer-brand .logo-wrap {
+  background:var(--black); display:inline-block;
+  padding:8px 16px; margin-bottom:16px;
+}
+.footer-brand .logo-wrap img { height:28px; }
+.footer-brand p { font-size:.9rem; line-height:1.7; max-width:320px; }
+.footer-col h4 {
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:.72rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; margin-bottom:14px;
+}
+.footer-col ul { list-style:none; padding:0; margin:0; }
+.footer-col ul li { margin-bottom:8px; }
+.footer-col ul li a {
+  font-size:.88rem; color:var(--orange);
+  text-decoration:none; transition:opacity .15s;
+}
+.footer-col ul li a:hover { opacity:.75; }
+.footer-col p { font-size:.88rem; }
+.footer-bottom {
+  border-top:1px solid rgba(0,0,0,.12);
+  max-width:1100px; margin:0 auto;
+  padding:20px 24px;
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:12px;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:.75rem;
+}
+.footer-sitemap { color:var(--orange); text-decoration:none; }
+.footer-sitemap:hover { opacity:.75; }
+.footer-social { display:flex; gap:16px; }
+.footer-social a { color:var(--black); transition:opacity .15s; }
+.footer-social a:hover { opacity:.6; }
+@media(max-width:680px){
+  .footer-top { grid-template-columns:1fr; gap:28px; }
+  .footer-bottom { flex-direction:column; text-align:center; }
+}
+
+/* ===== HEADER WIDER ===== */
+.nav-inner { max-width:1280px; padding:0 32px; }
+nav ul li a { padding:10px 18px; font-size:.8rem; }
+
 </style>
 </head>
 <body>
@@ -230,15 +325,55 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 
 
 <footer>
-  <div class="footer-inner">
-    <span class="footer-copy">© 2026 The Ached Body. All Rights Reserved.</span>
+  <div class="footer-top">
+    <div class="footer-col footer-brand">
+      <div class="logo-wrap"><img src="/images/THE-ACHED-BODY.png" alt="The Ached Body"></div>
+      <p>Make yourself pain free. For real this time. Use my guides or contact me for help. My goal is to make you happier and healthier, one muscle at a time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/ultimate-stretch/">How To Stretch</a></li>
+        <li><a href="/ultimate-guide-to-trigger-point-therapy/">How to Trigger Point</a></li>
+        <li><a href="/body-guides/">Body Guides</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/products-and-services/">Products and Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>Not Available</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Ached Body. All Rights Reserved.</span>
+    <a href="/sitemap/" class="footer-sitemap">Sitemap</a>
     <div class="footer-social">
-      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+      </a>
     </div>
   </div>
 </footer>
+
+
+<script>
+// Animate card-grid items on load
+document.addEventListener('DOMContentLoaded', function() {
+  var cards = document.querySelectorAll('.card-grid a');
+  cards.forEach(function(card, i) {
+    setTimeout(function() {
+      card.classList.add('visible');
+    }, 80 * i);
+  });
+});
+</script>
 
 </body>
 </html>
