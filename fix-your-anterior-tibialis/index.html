@@ -115,6 +115,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -158,8 +178,8 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   <h1>Fix Your Anterior Tibialis</h1>
   
   <h1 class="elementor-heading-title elementor-size-default">Fix Your Tibialis Anterior</h1>
-<img alt="trigger point your anterior tibialis article" class="attachment-large size-large wp-image-962" decoding="async" height="300" loading="lazy" src="/images/Self-Myofascial-Release-and-Trigger-Point-Techniques-for-a-Tight-Tibialis-Anterior.jpg" width="300"/>
-<img alt="stretch your anterior tibialis muscle" class="attachment-large size-large wp-image-961" decoding="async" height="300" loading="lazy" src="/images/How-to-Stretch-Your-Tibialis-Anterior_-A-Step-by-Step-Guide-to-Improve-Mobility-and-Prevent-Pain.jpg" width="300"/>
+<a href="/self-myofascial-release-and-trigger-point-techniques-for-a-tight-tibialis-anterior/" style="display:block"><img alt="trigger point your anterior tibialis article" class="attachment-large size-large wp-image-962" decoding="async" height="300" loading="lazy" src="/images/Self-Myofascial-Release-and-Trigger-Point-Techniques-for-a-Tight-Tibialis-Anterior.jpg" width="300"/></a>
+<a href="/how-to-stretch-your-tibialis-anterior-a-step-by-step-guide-to-improve-mobility-and-prevent-pain/" style="display:block"><img alt="stretch your anterior tibialis muscle" class="attachment-large size-large wp-image-961" decoding="async" height="300" loading="lazy" src="/images/How-to-Stretch-Your-Tibialis-Anterior_-A-Step-by-Step-Guide-to-Improve-Mobility-and-Prevent-Pain.jpg" width="300"/></a>
 </div>
 
 

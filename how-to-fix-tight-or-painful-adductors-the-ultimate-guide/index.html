@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -199,7 +219,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <p>It goes over how to use massage balls and foam rollers to relax the muscles before targeting them with a stretch.</p>
 <p>When paired together, a trigger point and stretch session is the best combo to truly relieve tension in any muscle group. </p>
 <h3 class="wp-block-heading"><strong>Step 5: Rebuild with Strength</strong></h3>
-<p>The final — and most often skipped — step is <strong><a href="https://www.youtube.com/shorts/aLFZSWMzgDs?feature=share">strengthening your adductors</a></strong> and the surrounding muscles through a full range of motion.</p>
+<p>The final — and most often skipped — step is <strong><div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/aLFZSWMzgDs" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div></strong> and the surrounding muscles through a full range of motion.</p>
 <figure class="wp-block-embed alignright is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aLFZSWMzgDs?feature=oembed" title="HOW To Bullet Proof Your Adductors" width="800"></iframe>
 </div></figure>

@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -196,7 +216,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <p>So, don’t feel like you need to get to number 5 to get the most out of the stretch. </p>
 <p>All of them are extremely effective.</p>
 <h3 class="wp-block-heading"><strong>1. Butterfly Stretch</strong></h3>
-<figure class="wp-block-image alignright size-full is-resized"><img alt="butterfly stretch with weight on knees" class="wp-image-1784" decoding="async" height="450" loading="lazy" src="/images/butterfly-stretch-with-weights.png" style="width:319px;height:auto" width="450"/></figure>
+<figure class="wp-block-image alignright size-full is-resized"><a href="/how-to-stretch-hip-flexors-with-the-5-best-stretches-for-tight-hips/" style="display:block"><img alt="butterfly stretch with weight on knees" class="wp-image-1784" decoding="async" height="450" loading="lazy" src="/images/butterfly-stretch-with-weights.png" style="width:319px;height:auto" width="450"/></a></figure>
 <p><strong>How to do it:</strong></p>
 <ul class="wp-block-list">
 <li>Sit on the floor, bring the soles of your feet together, and let your knees fall open.<br/></li>

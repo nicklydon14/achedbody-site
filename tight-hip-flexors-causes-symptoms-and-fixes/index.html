@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -234,7 +254,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <p>Use a <strong>posterior pelvic tilt</strong> to get a real stretch.</p>
 <p>Detailed instructions are listed in <strong><a href="/how-to-stretch-hip-flexors-with-the-5-best-stretches-for-tight-hips/">How to Stretch Hip Flexors</a></strong>.<br/></p>
 <h3 class="wp-block-heading"><strong>Step 3: Add Light Hip Mobility</strong></h3>
-<p>Use <a href="https://www.youtube.com/watch?v=NVzs5gy11wQ" rel="noreferrer noopener nofollow" target="_blank">guides like this</a> on youtube for some good hip mobility.</p>
+<p>Use <div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/NVzs5gy11wQ" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div> on youtube for some good hip mobility.</p>
 <p>Ideally you can do these to reintegrate the hip flexors and learn to use them properly in your movement patters</p>
 <h2 class="wp-block-heading"><strong>What’s Next?</strong></h2>
 <p>Sometimes chronic tightness can be a sign of a deeper issue:</p>

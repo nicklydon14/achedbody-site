@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -262,7 +282,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <li>These muscles run deep between those two bones, so small side-to-side movements are effective.<br/></li>
 <li>Pro Tip: Try sitting more upright or leaning back—different angles help you hit different rotators.<br/></li>
 </ul>
-<figure class="wp-block-image aligncenter size-large is-resized"><img alt="" class="wp-image-1081" decoding="async" height="1024" loading="lazy" src="/images/glute-trigger-point-side-view-leg-out.png" style="width:294px;height:auto" width="819"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><a href="/the-ultimate-guide-to-glute-health-stretching-trigger-points-foam-rolling-more/" style="display:block"><img alt="" class="wp-image-1081" decoding="async" height="1024" loading="lazy" src="/images/glute-trigger-point-side-view-leg-out.png" style="width:294px;height:auto" width="819"/></a></figure>
 <p><strong>Step 3: Release Hot Spots</strong></p>
 <ul class="wp-block-list">
 <li>Stop when you feel a tender point.<br/></li>

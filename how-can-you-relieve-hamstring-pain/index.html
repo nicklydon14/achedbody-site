@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -203,7 +223,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <li>Topical creams</li>
 <li>Professional massage</li>
 </ul>
-<p>Another immediate option is a <a href="https://www.youtube.com/shorts/7KQLRZTua98?feature=share">hamstring trigger point session</a>.</p>
+<p>Another immediate option is a <div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/7KQLRZTua98" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div>.</p>
 <center>
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="341" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7KQLRZTua98" title="Trigger Point Your Hamstrings" width="192">
 </iframe>
@@ -223,7 +243,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <p>You don’t have to be like me, but you do need to do enough to see changes. </p>
 <p>And making changes is a big undertaking that takes a lot of effort. </p>
 <p>Maintaining requires very little effort.</p>
-<p>I also recommend learning strength exercises that integrate more mobility into your life. For now, I recommend <a href="https://www.youtube.com/watch?v=7QLZDVuYhio">knees over toes guy</a>. </p>
+<p>I also recommend learning strength exercises that integrate more mobility into your life. For now, I recommend <div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/7QLZDVuYhio" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div>. </p>
 <p>Eventually, I will have pages that go over my favorite exercises. Until then, just keep learning and find your ideal practice.</p>
 <h2 class="wp-block-heading"><strong>When to Seek Help</strong></h2>
 <p>If a week or two of intense body work doesn’t improve your situation, you probably have a deeper problem that will require professional treatments.</p>

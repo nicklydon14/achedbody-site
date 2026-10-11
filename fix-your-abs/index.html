@@ -115,6 +115,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -158,9 +178,9 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   <h1>Fix Your Abs</h1>
   
   <h1 class="elementor-heading-title elementor-size-default">Fix Your Abdominals</h1>
-<img alt="Abdominal trigger point therapy article button" class="attachment-large size-large wp-image-1953" decoding="async" height="300" loading="lazy" src="/images/Trigger-Points-Therapy-For-Tight-Abdominal-Muscles.png" width="300"/>
-<img alt="Abdominal stretching article button" class="attachment-large size-large wp-image-1951" decoding="async" height="300" loading="lazy" src="/images/Ab-Stretches-for-Tightness-Pain-and-Better-Core-Mobility.png" width="300"/>
-<img alt="Abdominal stretching trigger point therapy article button" class="attachment-large size-large wp-image-1952" decoding="async" height="300" loading="lazy" src="/images/Stretching-and-Trigger-Point-Therapy-for-Abs_-A-Complete-Core-Release-Routine.png" width="300"/>
+<a href="/trigger-points-therapy-for-tight-abdominal-muscles/" style="display:block"><img alt="Abdominal trigger point therapy article button" class="attachment-large size-large wp-image-1953" decoding="async" height="300" loading="lazy" src="/images/Trigger-Points-Therapy-For-Tight-Abdominal-Muscles.png" width="300"/></a>
+<a href="/ab-stretches-for-tightness-pain-and-better-core-mobility/" style="display:block"><img alt="Abdominal stretching article button" class="attachment-large size-large wp-image-1951" decoding="async" height="300" loading="lazy" src="/images/Ab-Stretches-for-Tightness-Pain-and-Better-Core-Mobility.png" width="300"/></a>
+<a href="/stretching-and-trigger-point-therapy-for-abs-a-complete-core-release-routine/" style="display:block"><img alt="Abdominal stretching trigger point therapy article button" class="attachment-large size-large wp-image-1952" decoding="async" height="300" loading="lazy" src="/images/Stretching-and-Trigger-Point-Therapy-for-Abs_-A-Complete-Core-Release-Routine.png" width="300"/></a>
 </div>
 
 

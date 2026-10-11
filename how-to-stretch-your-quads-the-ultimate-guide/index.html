@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -200,7 +220,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 </div>
 <figure class="wp-block-image alignright size-full"><img alt="couch stretch" class="wp-image-599" decoding="async" height="400" loading="lazy" src="/images/quad-couch-stretch-good-position.jpg" width="300"/></figure>
 <p>The couch stretch is my go to anytime I need a quad stretch and there is an open wall available. </p>
-<p>Follow along with <a href="https://www.youtube.com/shorts/zZRkn6yKQSI?feature=share">this video</a> to get into the stretch and use the variations described below to deepen the stretch and change the target depending on where your tension is.</p>
+<p>Follow along with <div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/zZRkn6yKQSI" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div> to get into the stretch and use the variations described below to deepen the stretch and change the target depending on where your tension is.</p>
 <p>P.S. If this <a href="https://www.ncbi.nlm.nih.gov/books/NBK557657/">hurts your knee</a>, get a pad to cushion the floor you’re on! And read this article about <a href="/can-quad-trigger-points-cause-knee-pain/">quad related knee pain</a>!</p>
 <h4 class="wp-block-heading">Tuck hips, flatten back</h4>
 <p>The most common mistake people make when trying this stretch is that they are open in their hips when they do it. </p>

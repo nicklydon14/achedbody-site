@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -156,7 +176,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <div class="article-wrap">
   <h1>Foot Trigger Points And How To Fix Them</h1>
   <p class="article-meta">2025-02-15</p>
-  <figure class="wp-block-image aligncenter size-large"><img alt="foot trigger points banner image" class="wp-image-686" decoding="async" height="427" loading="lazy" src="/images/FOOT-TRIGGER-POINTS-BANNER-IMAGE.png" width="1024"/></figure>
+  <figure class="wp-block-image aligncenter size-large"><a href="/foot-pressure-and-trigger-points-guide/" style="display:block"><img alt="foot trigger points banner image" class="wp-image-686" decoding="async" height="427" loading="lazy" src="/images/FOOT-TRIGGER-POINTS-BANNER-IMAGE.png" width="1024"/></a></figure>
 <h1 class="wp-block-heading has-text-align-center">How To Fix Foot Trigger Points</h1>
 <p>If you think you have Plantar Fasciitis or just have general pain in your feet, you may need to learn about trigger points and how to relieve the pain.</p>
 <p>And if you don’t know what trigger points are, you can learn all about them in the beginning of my <a href="/ultimate-guide-to-trigger-point-therapy/">Ultimate guide to Trigger Pointing page</a>. </p>

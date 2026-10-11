@@ -114,6 +114,26 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
   nav ul{display:none}
   .footer-inner{flex-direction:column;text-align:center}
 }
+
+.article-wrap a.img-link,
+.article-wrap a[style*="display:block"] {
+  display:block;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border-radius:2px;
+}
+.article-wrap a.img-link:hover,
+.article-wrap a[style*="display:block"]:hover {
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.article-wrap a.img-link img,
+.article-wrap a[style*="display:block"] img {
+  transition:transform .2s;
+  display:block;
+  width:100%;
+}
+
 </style>
 </head>
 <body>
@@ -215,7 +235,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/iCnMKXbWano?feature=oembed" title="Trigger Pointing Your Quads!" width="800"></iframe>
 </div></figure>
 <p>But remember, you should never be grimacing or above a 6 out of 10 in terms of pain.</p>
-<p><a href="https://www.youtube.com/shorts/iCnMKXbWano?feature=share">Check out the video here!</a><br/></p>
+<p><div class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0"><iframe src="https://www.youtube.com/embed/iCnMKXbWano" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div><br/></p>
 <h3 class="wp-block-heading"><strong>Stretch Your Quads</strong></h3>
 <p>Everybody knows the <a href="/ultimate-stretch/">benefits of stretching</a>. </p>
 <p>If you have knee pain, understanding the different levels of quad stretches is crucial to fixing the pain.</p>
