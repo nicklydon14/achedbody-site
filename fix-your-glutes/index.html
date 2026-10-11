@@ -148,30 +148,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 .article-wrap::after { content:''; display:table; clear:both; }
 
 /* ===== ARTICLE CARD GRID (body guide pages) ===== */
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:32px 0;
-}
-.card-grid a {
-  display:block;
-  overflow:hidden;
-  border:2px solid var(--black);
-  transition:transform .2s,box-shadow .2s;
-  opacity:0;
-  transform:translateY(24px);
-}
-.card-grid a.visible {
-  opacity:1;
-  transform:translateY(0);
-  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
-}
-.card-grid a:hover {
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-.card-grid img { width:100%; display:block; }
+
 
 @media(max-width:680px){
   .card-grid { grid-template-columns:1fr 1fr; }
@@ -233,7 +210,9 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 /* Card grid square images */
 .card-grid {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 .card-grid a {
@@ -295,7 +274,7 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 <div class="article-wrap guide-page">
   <h1>Fix Your Glutes</h1>
-<div class="card-grid"><div class="card-grid">
+<div class="card-grid">
 <a href="/the-ultimate-guide-to-glute-health-stretching-trigger-points-foam-rolling-more/" style="display:block"><img alt="guide to glute health" class="attachment-large size-large wp-image-1700" decoding="async" loading="lazy" src="/images/The-Ultimate-Guide-to-Glute-Health-1.png"/></a>
 <a href="/trigger-points-in-the-glutes-the-basics-of-medius-maximus-minimus-pain-patterns/" style="display:block"><img alt="trigger points in glutes button image" class="attachment-large size-large wp-image-1702" decoding="async" loading="lazy" src="/images/Trigger-Points-in-the-Glutes_-image-link.png"/></a>
 <a href="/trigger-point-therapy-for-glute-pain-tools-diagrams-and-self-treatment-techniques/" style="display:block"><img alt="trigger point therapy for glute pain button image" class="attachment-large size-large wp-image-1701" decoding="async" loading="lazy" src="/images/Trigger-Point-Therapy-for-Glute-Pain-image-link.png"/></a>
@@ -308,7 +287,6 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 <a href="/glute-medius-vs-maximus-stretching-why-it-matters/" style="display:block"><img alt="targeting glute medius or maximus stretching guide article button image" class="attachment-large size-large wp-image-1693" decoding="async" loading="lazy" src="/images/Glute-Medius-vs-Maximus-Stretching-image-link.png"/></a>
 <a href="/best-foam-rolling-techniques-for-glutes-hips-and-hamstrings/" style="display:block"><img alt="glutes hips and hamstrings foam rolling guide button image" class="attachment-large size-large wp-image-1692" decoding="async" loading="lazy" src="/images/Best-Foam-Rolling-Techniques-image-link.png"/></a>
 </div>
-</div></div>
 
 
 <footer>

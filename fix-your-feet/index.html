@@ -148,30 +148,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 .article-wrap::after { content:''; display:table; clear:both; }
 
 /* ===== ARTICLE CARD GRID (body guide pages) ===== */
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:32px 0;
-}
-.card-grid a {
-  display:block;
-  overflow:hidden;
-  border:2px solid var(--black);
-  transition:transform .2s,box-shadow .2s;
-  opacity:0;
-  transform:translateY(24px);
-}
-.card-grid a.visible {
-  opacity:1;
-  transform:translateY(0);
-  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
-}
-.card-grid a:hover {
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-.card-grid img { width:100%; display:block; }
+
 
 @media(max-width:680px){
   .card-grid { grid-template-columns:1fr 1fr; }
@@ -233,7 +210,9 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 /* Card grid square images */
 .card-grid {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 .card-grid a {
@@ -299,11 +278,10 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 <img alt="foot trigger points and how to fix them" class="attachment-large size-large wp-image-652" decoding="async" height="300" loading="lazy" src="/images/2.jpg" width="300"/>
 <img alt="pressure points vs trigger points" class="attachment-large size-large wp-image-653" decoding="async" height="300" loading="lazy" src="/images/3.jpg" width="300"/>
 <img alt="Fixing planter fasciitis" class="attachment-large size-large wp-image-651" decoding="async" height="300" loading="lazy" src="/images/1.jpg" width="300"/>
-<div class="card-grid"><div class="card-grid">
+<div class="card-grid">
 <a href="/foot-pressure-and-trigger-points-guide/" style="display:block"><img alt="A Practical Guide to Foot Pressure Points &amp; Trigger Points" class="attachment-large size-large wp-image-751" decoding="async" loading="lazy" src="/images/A-Practical-Guide-to-Foot-Pressure-Points-Trigger-Points.png"/></a>
 <a href="/how-foot-pressure-points-affect-the-whole-body-tools-for-relief/" style="display:block"><img alt="" class="attachment-large size-large wp-image-672" decoding="async" loading="lazy" src="/images/How-Foot-Pressure-Points-Affect-the-Whole-Body-Tools-for-Relief.jpg"/></a>
 </div>
-</div></div>
 
 
 <footer>

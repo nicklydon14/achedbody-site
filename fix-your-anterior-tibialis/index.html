@@ -148,30 +148,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 .article-wrap::after { content:''; display:table; clear:both; }
 
 /* ===== ARTICLE CARD GRID (body guide pages) ===== */
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:32px 0;
-}
-.card-grid a {
-  display:block;
-  overflow:hidden;
-  border:2px solid var(--black);
-  transition:transform .2s,box-shadow .2s;
-  opacity:0;
-  transform:translateY(24px);
-}
-.card-grid a.visible {
-  opacity:1;
-  transform:translateY(0);
-  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
-}
-.card-grid a:hover {
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-.card-grid img { width:100%; display:block; }
+
 
 @media(max-width:680px){
   .card-grid { grid-template-columns:1fr 1fr; }
@@ -233,7 +210,9 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 /* Card grid square images */
 .card-grid {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 .card-grid a {
@@ -295,11 +274,10 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 <div class="article-wrap guide-page">
   <h1>Fix Your Anterior Tibialis</h1>
-<div class="card-grid"><div class="card-grid">
+<div class="card-grid">
 <a href="/self-myofascial-release-and-trigger-point-techniques-for-a-tight-tibialis-anterior/" style="display:block"><img alt="trigger point your anterior tibialis article" class="attachment-large size-large wp-image-962" decoding="async" loading="lazy" src="/images/Self-Myofascial-Release-and-Trigger-Point-Techniques-for-a-Tight-Tibialis-Anterior.jpg"/></a>
 <a href="/how-to-stretch-your-tibialis-anterior-a-step-by-step-guide-to-improve-mobility-and-prevent-pain/" style="display:block"><img alt="stretch your anterior tibialis muscle" class="attachment-large size-large wp-image-961" decoding="async" loading="lazy" src="/images/How-to-Stretch-Your-Tibialis-Anterior_-A-Step-by-Step-Guide-to-Improve-Mobility-and-Prevent-Pain.jpg"/></a>
 </div>
-</div></div>
 
 
 <footer>

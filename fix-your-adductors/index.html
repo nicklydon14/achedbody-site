@@ -148,30 +148,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 .article-wrap::after { content:''; display:table; clear:both; }
 
 /* ===== ARTICLE CARD GRID (body guide pages) ===== */
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:32px 0;
-}
-.card-grid a {
-  display:block;
-  overflow:hidden;
-  border:2px solid var(--black);
-  transition:transform .2s,box-shadow .2s;
-  opacity:0;
-  transform:translateY(24px);
-}
-.card-grid a.visible {
-  opacity:1;
-  transform:translateY(0);
-  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
-}
-.card-grid a:hover {
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-.card-grid img { width:100%; display:block; }
+
 
 @media(max-width:680px){
   .card-grid { grid-template-columns:1fr 1fr; }
@@ -233,7 +210,9 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 /* Card grid square images */
 .card-grid {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 .card-grid a {
@@ -295,14 +274,13 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 <div class="article-wrap guide-page">
   <h1>Fix Your Adductors</h1>
-<div class="card-grid"><div class="card-grid">
+<div class="card-grid">
 <a href="/how-to-stretch-your-adductors-5-essential-inner-thigh-stretches/" style="display:block"><img alt="adductor stretches article button image" class="attachment-large size-large wp-image-1488" decoding="async" loading="lazy" src="/images/5-Essential-Inner-Thigh-Stretches.png"/></a>
 <a href="/how-to-foam-roll-your-inner-thighs-safely-and-effectively/" style="display:block"><img alt="adductor foam roll article button image" class="attachment-large size-large wp-image-1492" decoding="async" loading="lazy" src="/images/How-to-Foam-Roll-Your-Inner-Thighs.png"/></a>
 <a href="/adductor-trigger-points-what-they-are-how-to-release-them/" style="display:block"><img alt="adductor trigger point article button image" class="attachment-large size-large wp-image-1489" decoding="async" loading="lazy" src="/images/Adductor-Trigger-Points_-What-They-Are-How-to-Release-Them.png"/></a>
 <a href="/can-tight-adductors-cause-hip-or-knee-pain-heres-what-you-need-to-know/" style="display:block"><img alt="adductor cause knee and hip pain article button image" class="attachment-large size-large wp-image-1490" decoding="async" loading="lazy" src="/images/Can-Tight-Adductors-Cause-Hip-or-Knee-Pain.png"/></a>
 <a href="/how-to-fix-tight-or-painful-adductors-the-ultimate-guide/" style="display:block"><img alt="adductor fixes ultimate guide article button image" class="attachment-large size-large wp-image-1491" decoding="async" loading="lazy" src="/images/How-to-Fix-Tight-or-Painful-Adductors_-The-Ultimate-Guide.png"/></a>
 </div>
-</div></div>
 
 
 <footer>

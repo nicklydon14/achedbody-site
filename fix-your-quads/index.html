@@ -148,30 +148,7 @@ footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
 .article-wrap::after { content:''; display:table; clear:both; }
 
 /* ===== ARTICLE CARD GRID (body guide pages) ===== */
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:32px 0;
-}
-.card-grid a {
-  display:block;
-  overflow:hidden;
-  border:2px solid var(--black);
-  transition:transform .2s,box-shadow .2s;
-  opacity:0;
-  transform:translateY(24px);
-}
-.card-grid a.visible {
-  opacity:1;
-  transform:translateY(0);
-  transition:opacity .4s ease, transform .4s ease, box-shadow .2s;
-}
-.card-grid a:hover {
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-.card-grid img { width:100%; display:block; }
+
 
 @media(max-width:680px){
   .card-grid { grid-template-columns:1fr 1fr; }
@@ -233,7 +210,9 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 /* Card grid square images */
 .card-grid {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 .card-grid a {
@@ -295,7 +274,7 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 
 <div class="article-wrap guide-page">
   <h1>Fix Your Quads</h1>
-<div class="card-grid"><div class="card-grid">
+<div class="card-grid">
 <a href="/trigger-points-in-the-quads-what-they-are-and-how-to-release-them/" style="display:block"><img alt="how to trigger point your quad muscles" class="attachment-large size-large wp-image-1315" decoding="async" loading="lazy" src="/images/Trigger-Points-in-the-Quads_-What-They-Are-and-How-to-Release-Them.png"/></a>
 <a href="/how-to-stretch-your-quads-the-ultimate-guide/" style="display:block"><img alt="how to stretch your quads" class="attachment-large size-large wp-image-1313" decoding="async" loading="lazy" src="/images/How-to-Stretch-Your-Quads-The-Ultimate-Guide.png"/></a>
 <a href="/how-to-release-trigger-points-in-the-quads/" style="display:block"><img alt="releasing trigger points in the quads" class="attachment-large size-large wp-image-1312" decoding="async" loading="lazy" src="/images/How-to-Release-Trigger-Points-in-the-Quads.png"/></a>
@@ -303,7 +282,6 @@ nav ul li a { padding:10px 18px; font-size:.8rem; }
 <a href="/can-quad-trigger-points-cause-knee-pain/" style="display:block"><img alt="can quad trigger points cause knee pain" class="attachment-large size-large wp-image-1310" decoding="async" loading="lazy" src="/images/Can-Quad-Trigger-Points-Cause-Knee-Pain.png"/></a>
 <a href="/trigger-points-in-the-legs-an-essential-guide-to-lower-body-muscle-pain/" style="display:block"><img alt="trigger point in the legs, ultimate guide" class="attachment-large size-large wp-image-1314" decoding="async" loading="lazy" src="/images/Trigger-Points-in-the-Legs_-An-Essential-Guide-to-Lower-Body-Muscle-Pain.png"/></a>
 </div>
-</div></div>
 
 
 <footer>
