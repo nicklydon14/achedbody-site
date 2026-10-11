@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Happens in the Body When You Stretch — The Ached Body</title>
+<meta name="description" content="Unlock the secrets of flexibility and discover what truly happens in your body when you stretch! As an exercise physiologist, I’ll guide you through the fascinating science behind stretching, from the">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#7aaba6;--teal-dk:#5e9490;
+  --orange:#c4622d;--orange2:#d46e38;
+  --black:#111;--dark:#1e1e1e;
+  --mid:#555;--light:#f5f4f2;--white:#fff;--border:#e0ddd8;
+  --max:800px;
+}
+html{font-size:17px}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--black);background:var(--white);line-height:1.75}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+header{background:var(--teal);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;gap:32px}
+.logo{background:var(--black);padding:7px 14px;flex-shrink:0}
+.logo img{height:30px;width:auto}
+nav{flex:1}
+nav ul{list-style:none;display:flex;align-items:center;justify-content:center;gap:0}
+nav ul li{position:relative}
+nav ul li a{color:var(--black);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:10px 14px;display:block;transition:color .15s}
+nav ul li a:hover{color:var(--white)}
+nav ul li ul{display:none;position:absolute;top:100%;left:0;background:var(--teal-dk);min-width:230px;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+nav ul li:hover>ul{display:flex}
+nav ul li ul li a{font-size:.76rem;padding:9px 16px;border-bottom:1px solid rgba(0,0,0,.08);white-space:nowrap}
+nav ul li ul li a:hover{background:rgba(0,0,0,.08);color:var(--white)}
+.header-social{display:flex;gap:14px;flex-shrink:0}
+.header-social a{color:var(--black);font-family:-apple-system,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:color .15s}
+.header-social a:hover{color:var(--white)}
+
+/* HERO */
+.hero{position:relative;height:520px;overflow:hidden;display:flex}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.hero-panel{position:relative;z-index:2;width:52%;background:var(--orange);clip-path:polygon(0 0,85% 0,100% 100%,0 100%);display:flex;align-items:center;padding:56px 72px 56px 56px}
+.hero-text{color:var(--white)}
+.hero-text .eyebrow{font-family:-apple-system,sans-serif;font-size:1.1rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px}
+.hero-text h1{font-family:-apple-system,sans-serif;font-size:4rem;line-height:.95;font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero-text .tagline{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;display:block}
+
+/* ARTICLE */
+.article-wrap{max-width:var(--max);margin:52px auto 72px;padding:0 24px}
+.article-wrap h1{font-size:2rem;line-height:1.2;font-weight:normal;margin-bottom:28px}
+.article-wrap h2{font-size:1.45rem;margin:36px 0 14px;font-weight:normal}
+.article-wrap h3{font-size:1.15rem;margin:28px 0 10px;font-weight:bold}
+.article-wrap h4{font-size:1rem;margin:22px 0 8px;font-weight:bold}
+.article-wrap p{margin-bottom:18px}
+.article-wrap ul,.article-wrap ol{margin:0 0 18px 24px}
+.article-wrap li{margin-bottom:6px}
+.article-wrap img{max-width:100%;margin:24px auto;border-radius:2px}
+.article-wrap hr{border:none;border-top:1px solid var(--border);margin:32px 0}
+.article-wrap table{width:100%;border-collapse:collapse;margin-bottom:24px}
+.article-wrap td,.article-wrap th{border:1px solid var(--border);padding:10px 14px;text-align:left}
+.article-wrap th{background:var(--light);font-weight:bold}
+.video-embed{margin:28px 0;width:100%;aspect-ratio:16/9}
+.video-embed iframe{width:100%;height:100%;border:none}
+.article-meta{font-family:-apple-system,sans-serif;font-size:.78rem;color:var(--mid);margin-bottom:32px}
+
+/* HOME GUIDES */
+.guides-section{max-width:var(--max);margin:56px auto;padding:0 24px}
+.section-label{font-family:-apple-system,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+.section-title{font-size:1.7rem;font-weight:normal;margin-bottom:32px}
+.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.guide-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.guide-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.1)}
+.guide-card img{width:100%;height:260px;object-fit:cover}
+.guide-card-body{padding:20px 22px;background:var(--light)}
+.guide-card-body h3{font-size:1rem;font-weight:normal}
+.guide-card-body .arrow{font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--orange);display:block;margin-top:8px}
+.divider{border:none;border-top:1px solid var(--border);max-width:var(--max);margin:0 auto}
+.body-guides{max-width:var(--max);margin:48px auto;padding:0 24px}
+.body-guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.body-link{display:block;padding:13px 16px;border:1px solid var(--border);font-family:-apple-system,sans-serif;font-size:.83rem;color:var(--dark);transition:background .12s,border-color .12s,color .12s}
+.body-link:hover{background:var(--light);border-color:var(--orange);color:var(--orange)}
+.body-link::before{content:'→ ';color:var(--orange)}
+
+/* BLOG INDEX */
+.blog-grid{max-width:var(--max);margin:52px auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.blog-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.blog-card-body{padding:18px 20px}
+.blog-card-body h2{font-size:1rem;font-weight:normal;line-height:1.4;margin-bottom:10px}
+.blog-card-body p{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--mid);line-height:1.5}
+.blog-card-body .read-more{font-family:-apple-system,sans-serif;font-size:.73rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);display:block;margin-top:10px}
+
+/* ABOUT STRIP */
+.about-strip{background:var(--teal);padding:56px 24px;text-align:center;margin-top:48px}
+.about-strip .logo-wrap{display:inline-block;background:var(--black);padding:8px 16px;margin-bottom:20px}
+.about-strip .logo-wrap img{height:36px}
+.about-strip p{max-width:540px;margin:0 auto;font-size:1rem;color:var(--black);line-height:1.8}
+
+/* FOOTER */
+footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-copy{font-family:-apple-system,sans-serif;font-size:.75rem}
+.footer-social{display:flex;gap:20px}
+.footer-social a{font-family:-apple-system,sans-serif;font-size:.75rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.07em;transition:color .15s}
+.footer-social a:hover{color:#fff}
+
+/* MOBILE */
+@media(max-width:680px){
+  .guides-grid,.blog-grid{grid-template-columns:1fr}
+  .body-guides-grid{grid-template-columns:1fr 1fr}
+  .hero-panel{width:70%;padding:40px 60px 40px 28px}
+  .hero-text h1{font-size:2.8rem}
+  nav ul{display:none}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a class="logo" href="/"><img src="/images/THE-ACHED-BODY.png" alt="The Ached Body"></a>
+    <nav>
+      <ul>
+        <li><a href="/ultimate-stretch/">How To Stretch</a></li>
+        <li><a href="/ultimate-guide-to-trigger-point-therapy/">How to Trigger Point</a></li>
+        <li>
+          <a href="/body-guides/">Body Guides ▾</a>
+          <ul>
+            <li><a href="/fix-your-feet/">Fix Your Feet</a></li>
+            <li><a href="/fix-your-calves/">Fix Your Calves</a></li>
+            <li><a href="/fix-your-anterior-tibialis/">Fix Your Anterior Tibialis</a></li>
+            <li><a href="/fix-your-hamstrings/">Fix Your Hamstrings</a></li>
+            <li><a href="/fix-your-quads/">Fix Your Quads</a></li>
+            <li><a href="/fix-your-adductors/">Fix Your Adductors</a></li>
+            <li><a href="/fix-your-glutes/">Fix Your Glutes</a></li>
+            <li><a href="/fix-your-hip-flexors/">Fix Your Hip Flexors</a></li>
+            <li><a href="/fix-your-abs/">Fix Your Abs</a></li>
+            <li><a href="/ultimate-guides-to-fix-your-body/">All Guides</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/products-and-services/">Work With Me</a></li>
+      </ul>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">IG</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">FB</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YT</a>
+    </div>
+  </div>
+</header>
+
+
+<div class="article-wrap">
+  <h1>What Happens in the Body When You Stretch</h1>
+  <p class="article-meta">2024-11-22</p>
+  <h1 class="elementor-heading-title elementor-size-default">What Happen's When You Stretch</h1>
+
+<p>I’m going to teach you everything I know (as an exercise physiologist) about stretching in this post, so you know that flexibility is something everybody can achieve.</p>
+<p>This article is all about: </p>
+<ul class="wp-block-list">
+<li>The science of stretching</li>
+<li>The roles of muscle structure</li>
+<li>Neuromuscular components of stretching</li>
+<li>The body’s ability to adapt over time!<br/><br/></li>
+</ul>
+<h3 class="wp-block-heading"><strong>The Structure of Skeletal Muscle </strong></h3>
+<p>First you have to understand what a muscle is, And don’t worry about all the vocabulary, try to understand the overall structure.</p>
+<p>Skeletal muscle is highly organized. Check it out. </p>
+<p><strong>Muscle Organization</strong></p>
+<p>Skeletal muscle is composed of bundles of fibers, each encased in connective tissue layers:</p>
+<ul class="wp-block-list">
+<li><strong>Epimysium</strong>: The outermost connective tissue layer, encasing the entire muscle.</li>
+<li><strong>Perimysium</strong>: Surrounds bundles of fibers called muscle fascicles.</li>
+<li><strong>Endomysium</strong>: Encases individual muscle fibers within the fascicles.</li>
+</ul>
+<p>Within each muscle fiber are <strong>myofibrils</strong>, which are composed of repeating units called <strong>sarcomeres</strong>—the contractile units responsible for muscle contraction and elongation during stretching. </p>
+<p>Stretching temporarily lengthens these sarcomeres, contributing to increased muscle length.</p>
+<h4 class="wp-block-heading"><strong>Types of Muscle Fibers</strong></h4>
+<p>This isn’t super important to know when it comes to stretching, but there are two overarching types of muscle fibers:</p>
+<ul class="wp-block-list">
+<li><strong>Slow-twitch fibers</strong>: More elastic and better suited for endurance and prolonged stretches.</li>
+<li><strong>Fast-twitch fibers</strong>: Less elastic but capable of generating rapid, powerful movements.<br/><br/></li>
+</ul>
+<h3 class="wp-block-heading"><strong>Neuromuscular Components of Stretching</strong></h3>
+<p>A lot of people think that stretching is just in the muscles. But research has shown that stretching is actually a dynamic interplay between the nervous system and the muscular system. </p>
+<p>Two key sensory receptors in muscles—<strong>muscle spindles</strong> and <strong>Golgi tendon organs (GTOs)</strong>—play crucial roles in keeping us safe from injury.</p>
+<h4 class="wp-block-heading"><strong>Muscle Spindles</strong></h4>
+<p>Muscle spindles are sensory receptors located within the muscle fibers. They detect:</p>
+<ul class="wp-block-list">
+<li><strong>Changes in muscle length</strong>: How far a muscle is being stretched.</li>
+<li><strong>Rate of change in length</strong>: How quickly the muscle is elongating.</li>
+</ul>
+<p>When a muscle is stretched rapidly, muscle spindles activate the <strong>stretch reflex</strong>, causing the muscle to contract. This reflex helps protect the muscle from overextension and injury. </p>
+<p>However, with sustained, gentle stretching, muscle spindle activity decreases, allowing the muscle to relax and lengthen further which is great if you want to open up your range of motion.</p>
+<h4 class="wp-block-heading"><strong>Golgi Tendon Organs (GTOs)</strong></h4>
+<p>Located in tendons (the collection of connective tissue between muscle and bone connections), <strong>GTOs monitor tension and force.</strong> </p>
+<p>When tension increases during stretching, GTOs initiate a process called <strong>autogenic inhibition</strong>:</p>
+<ul class="wp-block-list">
+<li>The GTOs signal the muscle to relax.</li>
+<li>This reflex allows for deeper stretching by reducing tension and preventing damage.</li>
+</ul>
+<p>This is why PNF Stretching can be so effective! When you engage the muscle (increase tension) you signal to the muscle to relax!</p>
+<p>Are you still with me here? I promise, this article covers 99% of everything I learned about stretching as an Exercise physiology student in college. Sourced from the best textbooks on the topic.</p>
+<p>Onward. <br/><br/></p>
+<h3 class="wp-block-heading"><strong>The Physiology of Stretching</strong></h3>
+<p>Stretching triggers both immediate and long-term changes in the body.</p>
+<h4 class="wp-block-heading"><strong>Acute (short term) Responses</strong></h4>
+<p>When you stretch, several processes occur:</p>
+<ul class="wp-block-list">
+<li><strong>Increased Blood Flow</strong>: Stretching promotes circulation, delivering oxygen and nutrients to the muscles.</li>
+<li><strong>Sarcomere Lengthening</strong>: Muscle fibers temporarily elongate as sarcomeres stretch.</li>
+<li><strong>Nervous System Modulation</strong>: Reduced muscle spindle activity and increased GTO activation relaxes the muscle.</li>
+</ul>
+<p>So basically, every time you stretch, your body signals to your brain that you are relaxing, and you increase blood flow which contributes to healing and body remodeling which is super important!! </p>
+<h4 class="wp-block-heading"><strong>Chronic (long term) Adaptations</strong></h4>
+<p>With consistent stretching over time, the body undergoes structural and neurological changes:</p>
+<ul class="wp-block-list">
+<li><strong>Muscle Remodeling</strong>: Regular stretching lengthens muscle fibers and reorganizes collagen in connective tissues, improving flexibility.</li>
+<li><strong>Neural Adaptations</strong>: The nervous system becomes less reactive to stretching, reducing resistance and improving range of motion.</li>
+<li><strong>Fascia Pliability</strong>: Fascia, the connective tissue surrounding muscles, becomes more elastic, enhancing overall mobility.</li>
+</ul>
+<p>Long term pliability. If you have ever heard a top athlete or coach talk, they talk a lot about pliability. </p>
+<p>A body that can adapt to its environment is a mobile and flexible body. Not to mention the reduction in injuries that are seen in people who practice flexibility and mobility.</p>
+<p>Now, let’s get into the stretching a bit more.<br/><br/></p>
+<h3 class="wp-block-heading"><strong>Types of Stretching and Their Effects</strong></h3>
+<p>Different types of stretching target muscles and neuromuscular components in unique ways.</p>
+<h4 class="wp-block-heading"><strong>Static Stretching</strong></h4>
+<p>Think of this as a sit and hold stretch. It involves holding a position for an extended period.</p>
+<ul class="wp-block-list">
+<li>Dampens muscle spindle activity, allowing muscles to relax and lengthen.</li>
+<li>Effective for improving flexibility and reducing tension.</li>
+</ul>
+<h4 class="wp-block-heading"><strong>Dynamic Stretching</strong></h4>
+<p>Think of this as your active stretching through movement. This will fortify your flexibility because the muscle is being used to stretch itself.</p>
+<ul class="wp-block-list">
+<li>Involves active movements that take joints through their full range of motion.</li>
+<li>Increases blood flow and prepares muscles for activity.</li>
+<li>Activates neuromuscular pathways, improving coordination.</li>
+</ul>
+<h4 class="wp-block-heading"><strong>Proprioceptive Neuromuscular Facilitation (PNF) Stretching</strong></h4>
+<p>PNF stretching is essentially the mix between static and dynamic stretching. Contracting a muscle, so the golgi tendon organs relax the muscle further into a deep static stretch.</p>
+<ul class="wp-block-list">
+<li>Combines muscle contraction and relaxation techniques.</li>
+<li>Utilizes GTO activation to achieve deeper stretches.</li>
+<li>Highly effective for improving flexibility in targeted muscle groups.<br/><br/></li>
+</ul>
+<h3 class="wp-block-heading"><strong>Additional Factors Affecting Stretching</strong></h3>
+<p>Several factors influence how the body responds to stretching:</p>
+<h4 class="wp-block-heading"><strong>Temperature</strong></h4>
+<p>Warm muscles and connective tissues are more pliable and less prone to injury. A proper warm-up before stretching increases muscle elasticity.</p>
+<h4 class="wp-block-heading"><strong>Hydration and Nutrition</strong></h4>
+<p>Adequate hydration ensures the tissues remain supple, while proper nutrition supports cellular repair and growth.</p>
+<h4 class="wp-block-heading"><strong>Age and Genetics</strong></h4>
+<ul class="wp-block-list">
+<li>Younger individuals typically have more elastic tissues, while flexibility typically declines with age. But this is mainly due to inactivity over decades of life and less to do with the natural reduction in collagen elasticity.</li>
+<li>Genetic predispositions also affect baseline flexibility and response to stretching.<br/><br/></li>
+</ul>
+<h3 class="wp-block-heading"><strong>The Benefits of Stretching Beyond Flexibility</strong></h3>
+<p>Stretching offers a lot more than being able to do a split. It has a range of benefits like:</p>
+<ul class="wp-block-list">
+<li><strong>Enhanced Neuromuscular Coordination</strong>: Improved communication between the nervous system and muscles.</li>
+<li><strong>Injury Prevention</strong>: By increasing joint range of motion and reducing muscle tension.</li>
+<li><strong>Stress Relief</strong>: Stretching activates the parasympathetic nervous system, promoting relaxation and reducing cortisol levels.<br/><br/></li>
+</ul>
+<h3 class="wp-block-heading"><strong>Now What?</strong></h3>
+<p>Now that you know what happens when you stretch, it’s time to get to it! The ultimate guide to stretching has every stretch you need to get started on the journey of flexibility. But as you may know, it isn’t always as simple as stretching more. </p>
+<p>A lot of times our muscles develop adhesions and get stuck together, which form knots in the muscles. That’s why trigger point therapy is important in reducing muscle aches and pains!</p>
+<p> </p>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 The Ached Body. All Rights Reserved.</span>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trigger Points in the Glutes: The Basics of Medius, Maximus & Minimus Pain Patterns — The Ached Body</title>
+<meta name="description" content="Trigger points in the glutes are one of the most common — and missed — sources of chronic pain.  You may feel it in your butt, hips, lower back, hamstrings, or even down the leg, but the root cause mi">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#7aaba6;--teal-dk:#5e9490;
+  --orange:#c4622d;--orange2:#d46e38;
+  --black:#111;--dark:#1e1e1e;
+  --mid:#555;--light:#f5f4f2;--white:#fff;--border:#e0ddd8;
+  --max:800px;
+}
+html{font-size:17px}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--black);background:var(--white);line-height:1.75}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+header{background:var(--teal);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;gap:32px}
+.logo{background:var(--black);padding:7px 14px;flex-shrink:0}
+.logo img{height:30px;width:auto}
+nav{flex:1}
+nav ul{list-style:none;display:flex;align-items:center;justify-content:center;gap:0}
+nav ul li{position:relative}
+nav ul li a{color:var(--black);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:10px 14px;display:block;transition:color .15s}
+nav ul li a:hover{color:var(--white)}
+nav ul li ul{display:none;position:absolute;top:100%;left:0;background:var(--teal-dk);min-width:230px;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+nav ul li:hover>ul{display:flex}
+nav ul li ul li a{font-size:.76rem;padding:9px 16px;border-bottom:1px solid rgba(0,0,0,.08);white-space:nowrap}
+nav ul li ul li a:hover{background:rgba(0,0,0,.08);color:var(--white)}
+.header-social{display:flex;gap:14px;flex-shrink:0}
+.header-social a{color:var(--black);font-family:-apple-system,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:color .15s}
+.header-social a:hover{color:var(--white)}
+
+/* HERO */
+.hero{position:relative;height:520px;overflow:hidden;display:flex}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.hero-panel{position:relative;z-index:2;width:52%;background:var(--orange);clip-path:polygon(0 0,85% 0,100% 100%,0 100%);display:flex;align-items:center;padding:56px 72px 56px 56px}
+.hero-text{color:var(--white)}
+.hero-text .eyebrow{font-family:-apple-system,sans-serif;font-size:1.1rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px}
+.hero-text h1{font-family:-apple-system,sans-serif;font-size:4rem;line-height:.95;font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero-text .tagline{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;display:block}
+
+/* ARTICLE */
+.article-wrap{max-width:var(--max);margin:52px auto 72px;padding:0 24px}
+.article-wrap h1{font-size:2rem;line-height:1.2;font-weight:normal;margin-bottom:28px}
+.article-wrap h2{font-size:1.45rem;margin:36px 0 14px;font-weight:normal}
+.article-wrap h3{font-size:1.15rem;margin:28px 0 10px;font-weight:bold}
+.article-wrap h4{font-size:1rem;margin:22px 0 8px;font-weight:bold}
+.article-wrap p{margin-bottom:18px}
+.article-wrap ul,.article-wrap ol{margin:0 0 18px 24px}
+.article-wrap li{margin-bottom:6px}
+.article-wrap img{max-width:100%;margin:24px auto;border-radius:2px}
+.article-wrap hr{border:none;border-top:1px solid var(--border);margin:32px 0}
+.article-wrap table{width:100%;border-collapse:collapse;margin-bottom:24px}
+.article-wrap td,.article-wrap th{border:1px solid var(--border);padding:10px 14px;text-align:left}
+.article-wrap th{background:var(--light);font-weight:bold}
+.video-embed{margin:28px 0;width:100%;aspect-ratio:16/9}
+.video-embed iframe{width:100%;height:100%;border:none}
+.article-meta{font-family:-apple-system,sans-serif;font-size:.78rem;color:var(--mid);margin-bottom:32px}
+
+/* HOME GUIDES */
+.guides-section{max-width:var(--max);margin:56px auto;padding:0 24px}
+.section-label{font-family:-apple-system,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+.section-title{font-size:1.7rem;font-weight:normal;margin-bottom:32px}
+.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.guide-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.guide-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.1)}
+.guide-card img{width:100%;height:260px;object-fit:cover}
+.guide-card-body{padding:20px 22px;background:var(--light)}
+.guide-card-body h3{font-size:1rem;font-weight:normal}
+.guide-card-body .arrow{font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--orange);display:block;margin-top:8px}
+.divider{border:none;border-top:1px solid var(--border);max-width:var(--max);margin:0 auto}
+.body-guides{max-width:var(--max);margin:48px auto;padding:0 24px}
+.body-guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.body-link{display:block;padding:13px 16px;border:1px solid var(--border);font-family:-apple-system,sans-serif;font-size:.83rem;color:var(--dark);transition:background .12s,border-color .12s,color .12s}
+.body-link:hover{background:var(--light);border-color:var(--orange);color:var(--orange)}
+.body-link::before{content:'→ ';color:var(--orange)}
+
+/* BLOG INDEX */
+.blog-grid{max-width:var(--max);margin:52px auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.blog-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.blog-card-body{padding:18px 20px}
+.blog-card-body h2{font-size:1rem;font-weight:normal;line-height:1.4;margin-bottom:10px}
+.blog-card-body p{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--mid);line-height:1.5}
+.blog-card-body .read-more{font-family:-apple-system,sans-serif;font-size:.73rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);display:block;margin-top:10px}
+
+/* ABOUT STRIP */
+.about-strip{background:var(--teal);padding:56px 24px;text-align:center;margin-top:48px}
+.about-strip .logo-wrap{display:inline-block;background:var(--black);padding:8px 16px;margin-bottom:20px}
+.about-strip .logo-wrap img{height:36px}
+.about-strip p{max-width:540px;margin:0 auto;font-size:1rem;color:var(--black);line-height:1.8}
+
+/* FOOTER */
+footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-copy{font-family:-apple-system,sans-serif;font-size:.75rem}
+.footer-social{display:flex;gap:20px}
+.footer-social a{font-family:-apple-system,sans-serif;font-size:.75rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.07em;transition:color .15s}
+.footer-social a:hover{color:#fff}
+
+/* MOBILE */
+@media(max-width:680px){
+  .guides-grid,.blog-grid{grid-template-columns:1fr}
+  .body-guides-grid{grid-template-columns:1fr 1fr}
+  .hero-panel{width:70%;padding:40px 60px 40px 28px}
+  .hero-text h1{font-size:2.8rem}
+  nav ul{display:none}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a class="logo" href="/"><img src="/images/THE-ACHED-BODY.png" alt="The Ached Body"></a>
+    <nav>
+      <ul>
+        <li><a href="/ultimate-stretch/">How To Stretch</a></li>
+        <li><a href="/ultimate-guide-to-trigger-point-therapy/">How to Trigger Point</a></li>
+        <li>
+          <a href="/body-guides/">Body Guides ▾</a>
+          <ul>
+            <li><a href="/fix-your-feet/">Fix Your Feet</a></li>
+            <li><a href="/fix-your-calves/">Fix Your Calves</a></li>
+            <li><a href="/fix-your-anterior-tibialis/">Fix Your Anterior Tibialis</a></li>
+            <li><a href="/fix-your-hamstrings/">Fix Your Hamstrings</a></li>
+            <li><a href="/fix-your-quads/">Fix Your Quads</a></li>
+            <li><a href="/fix-your-adductors/">Fix Your Adductors</a></li>
+            <li><a href="/fix-your-glutes/">Fix Your Glutes</a></li>
+            <li><a href="/fix-your-hip-flexors/">Fix Your Hip Flexors</a></li>
+            <li><a href="/fix-your-abs/">Fix Your Abs</a></li>
+            <li><a href="/ultimate-guides-to-fix-your-body/">All Guides</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/products-and-services/">Work With Me</a></li>
+      </ul>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">IG</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">FB</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YT</a>
+    </div>
+  </div>
+</header>
+
+
+<div class="article-wrap">
+  <h1>Trigger Points in the Glutes: The Basics of Medius, Maximus & Minimus Pain Patterns</h1>
+  <p class="article-meta">2025-11-21</p>
+  <figure class="wp-block-image aligncenter size-large"><img alt="Trigger Points in the Glutes: The Basics of Medius, Maximus &amp; Minimus Pain Patterns" class="wp-image-1670" decoding="async" height="427" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/11/Trigger-Points-in-the-Glutes_-The-Basics-of-Medius-Maximus-Minimus-Pain-Patterns-1024x427.png" srcset="/wp-content/uploads/2025/11/Trigger-Points-in-the-Glutes_-The-Basics-of-Medius-Maximus-Minimus-Pain-Patterns-1024x427.png 1024w, /wp-content/uploads/2025/11/Trigger-Points-in-the-Glutes_-The-Basics-of-Medius-Maximus-Minimus-Pain-Patterns-300x125.png 300w, /wp-content/uploads/2025/11/Trigger-Points-in-the-Glutes_-The-Basics-of-Medius-Maximus-Minimus-Pain-Patterns-768x320.png 768w, /wp-content/uploads/2025/11/Trigger-Points-in-the-Glutes_-The-Basics-of-Medius-Maximus-Minimus-Pain-Patterns.png 1200w" width="1024"/></figure>
+<p>Trigger points in the glutes are one of the most common — and missed — sources of chronic pain. </p>
+<p>You may feel it in your butt, hips, lower back, hamstrings, or even down the leg, but the root cause might be in your glutes somewhere! </p>
+<p>In this guide, I’m going over the muscles and how to find trigger points to treat with trigger point therapy and stretching! </p>
+<p>Check it out!</p>
+<h2 class="wp-block-heading"><strong>A Quick Glute Anatomy Overview</strong></h2>
+<p>Trigger point therapy and foam rolling rely on you knowing the direction that the muscle is flowing in. </p>
+<p>That’s why it helps to understand the structure of the glutes:</p>
+<figure class="wp-block-image alignright size-full is-resized"><img alt="Glute max,med and min picture" class="wp-image-1725" decoding="async" height="351" loading="lazy" sizes="(max-width: 630px) 100vw, 630px" src="/wp-content/uploads/2025/11/b2bece_52227a99304042278e36f2f1c9ba4a41mv2.webp" srcset="/wp-content/uploads/2025/11/b2bece_52227a99304042278e36f2f1c9ba4a41mv2.webp 630w, /wp-content/uploads/2025/11/b2bece_52227a99304042278e36f2f1c9ba4a41mv2-300x167.webp 300w" style="width:562px;height:auto" width="630"/></figure>
+<ul class="wp-block-list">
+<li><strong>Gluteus Maximus</strong>: The large, superficial muscle that forms most of your buttock. Primary role: hip extension and power.<br/></li>
+<li><strong>Gluteus Medius</strong>: Located underneath the maximus, more on the side of the hip. Primary role: hip abduction and pelvic stability during walking or standing on one leg.<br/></li>
+<li><strong>Gluteus Minimus</strong>: Deepest glute muscle, tucked under the medius. Primary role: hip abduction and stabilization.<br/></li>
+</ul>
+<p>Pay attention to the lines that show the direction of the muscle. When rolling or trigger pointing, it helps to roll along the muscle fibers or across them.</p>
+<h2 class="wp-block-heading"><strong>Gluteus Maximus Trigger Points</strong></h2>
+<figure class="wp-block-image aligncenter size-full"><img alt="" class="wp-image-2059" decoding="async" height="166" loading="lazy" sizes="(max-width: 492px) 100vw, 492px" src="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-9.57.17-AM.png" srcset="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-9.57.17-AM.png 492w, /wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-9.57.17-AM-300x101.png 300w" width="492"/></figure>
+<p><strong>Location</strong>: Mid-buttock, along the sacrum and near the tailbone.</p>
+<p><strong>Watch the video below to see how I target the glute Maximus for trigger points.</strong></p>
+<figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QWXzgZ0uY3Q?feature=oembed" title="Targeting The Gluteus Maximus" width="800"></iframe>
+</div></figure>
+<h2 class="wp-block-heading"><strong>Gluteus Medius Trigger Points</strong></h2>
+<figure class="wp-block-image aligncenter size-full is-resized"><img alt="" class="wp-image-2061" decoding="async" height="256" loading="lazy" sizes="(max-width: 492px) 100vw, 492px" src="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.01.21-AM.png" srcset="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.01.21-AM.png 492w, /wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.01.21-AM-300x156.png 300w" style="width:388px;height:auto" width="492"/></figure>
+<p><strong>Location</strong>: Just below the iliac crest, along the outer edge of the pelvis.</p>
+<p><strong>If you feel pain in any of these areas, the glute medius may be to blame.</strong></p>
+<ul class="wp-block-list">
+<li>Pain in the upper buttock or sacrum<br/></li>
+<li>Outer hip pain, especially when sleeping on that side<br/></li>
+<li>Discomfort that mimics SI joint or low back issues</li>
+</ul>
+<p><strong>Common Triggers</strong>:</p>
+<ul class="wp-block-list">
+<li>Overuse in runners or walkers<br/></li>
+<li>Weakness leading to compensatory tightness<br/></li>
+<li>Poor posture or leg length discrepancies</li>
+</ul>
+<p><strong>How to Release</strong>:<br/>Lie on your side and use a lacrosse ball under the upper glute. You’ll find the tender spots just behind and below the hip bone. </p>
+<p>For a full breakdown, see <a href="/gluteus-medius-trigger-points-pain-patterns-symptoms-and-how-to-release-them/" rel="noreferrer noopener" target="_blank">Gluteus Medius Trigger Points</a>.</p>
+<h2 class="wp-block-heading"><strong>Gluteus Minimus Trigger Points</strong></h2>
+<figure class="wp-block-image alignright size-full is-resized"><img alt="" class="wp-image-2062" decoding="async" height="500" loading="lazy" sizes="(max-width: 473px) 100vw, 473px" src="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.02.29-AM.png" srcset="/wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.02.29-AM.png 473w, /wp-content/uploads/2025/11/Screen-Shot-2026-03-02-at-10.02.29-AM-284x300.png 284w" style="width:303px;height:auto" width="473"/></figure>
+<p><strong>Location</strong>: Deep inside the glute, under the medius and maximus.</p>
+<p><strong>How to Release</strong>:<br/>This one’s deep — you may need to use a massage gun or lay on a firm ball to access it. </p>
+<p>I like to treat it similar to the glute maximus, but instead of moving from the inside to the outside, I travel more vertically to target the minimus. Look for it on the right side of the image attached to see how it runs!</p>
+<p>For a general rule of thumb, apply pressure just behind the top of the femur and hold steady when you find a hotspot. </p>
+<p>My full guide on <a href="/the-ultimate-guide-to-glute-health-stretching-trigger-points-foam-rolling-more/">Trigger Point Therapy for Glute Pain</a> walks you through it with detail!</p>
+<h2 class="wp-block-heading"><strong>When One Glute Trigger Point Hides Another</strong></h2>
+<p>It’s important to understand that the glute muscles don’t work alone. They operate in a system — and when one is overloaded or shut down, another often compensates. </p>
+<p>This means:</p>
+<ul class="wp-block-list">
+<li>You might release a gluteus medius knot only to feel pain shift to the minimus.<br/></li>
+<li>You might address the glute max and still have lingering leg symptoms from a hidden minimus knot.<br/></li>
+<li>Or you might overlook a deeper cause and mistakenly treat your hamstrings or lower back.<br/></li>
+</ul>
+<p>Always take time to assess all three glute muscles if your symptoms persist. Referred pain can be sneaky.</p>
+<h3 class="wp-block-heading"><strong>A Layered Approach to Glute Trigger Point Release</strong></h3>
+<figure class="wp-block-image alignright size-full is-resized"><img alt="circle of corrective exercise steps
+" class="wp-image-1969" decoding="async" height="1024" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/11/ChatGPT-Image-Feb-4-2026-01_55_15-PM.png" srcset="/wp-content/uploads/2025/11/ChatGPT-Image-Feb-4-2026-01_55_15-PM.png 1024w, /wp-content/uploads/2025/11/ChatGPT-Image-Feb-4-2026-01_55_15-PM-300x300.png 300w, /wp-content/uploads/2025/11/ChatGPT-Image-Feb-4-2026-01_55_15-PM-150x150.png 150w, /wp-content/uploads/2025/11/ChatGPT-Image-Feb-4-2026-01_55_15-PM-768x768.png 768w" style="width:253px;height:auto" width="1024"/></figure>
+<p>To get the best results, treat your glutes with this strategy:</p>
+<ol class="wp-block-list">
+<li><strong>Warm up</strong> with light exercise if possible.<br/></li>
+<li><strong>Identify specific trigger points</strong> using a lacrosse ball or massage tool.<br/></li>
+<li><strong>Hold pressure</strong> on each spot for 30–60 seconds.<br/></li>
+<li><strong>Stretch</strong> the area afterward (e.g., deep lunge stretch or pigeon pose).<br/></li>
+<li><strong>Strengthen</strong> the surrounding muscles to prevent recurrence.</li>
+</ol>
+<p><br/><strong>Don’t Let Glute Pain Fool You</strong></p>
+<p>What feels like hamstring tightness, lower back pain, or leg fatigue might actually be a <strong><a href="/trigger-point-therapy-for-glute-pain-tools-diagrams-and-self-treatment-techniques/">trigger point in the glutes</a></strong>. These hidden knots can send pain far from the actual source. </p>
+<p>With the right tools, such as a lacrosse ball or massage gun, and some know-how, you can locate and treat the root of the problem.</p>
+<p>The best part? You can do it all at home.</p>
+<p>Ready to take the next step? Visit <a href="/fix-your-glutes/">Fix Your Glutes</a> for more treatment strategies and recovery guidance.</p>
+<p>Please put your questions below.</p>
+<p>Good luck!</p>
+<p>-Nick</p>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 The Ached Body. All Rights Reserved.</span>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

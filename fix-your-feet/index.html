@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fix Your Feet — The Ached Body</title>
+<meta name="description" content="Fix Your Feet
+">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#7aaba6;--teal-dk:#5e9490;
+  --orange:#c4622d;--orange2:#d46e38;
+  --black:#111;--dark:#1e1e1e;
+  --mid:#555;--light:#f5f4f2;--white:#fff;--border:#e0ddd8;
+  --max:800px;
+}
+html{font-size:17px}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--black);background:var(--white);line-height:1.75}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+header{background:var(--teal);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;gap:32px}
+.logo{background:var(--black);padding:7px 14px;flex-shrink:0}
+.logo img{height:30px;width:auto}
+nav{flex:1}
+nav ul{list-style:none;display:flex;align-items:center;justify-content:center;gap:0}
+nav ul li{position:relative}
+nav ul li a{color:var(--black);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:10px 14px;display:block;transition:color .15s}
+nav ul li a:hover{color:var(--white)}
+nav ul li ul{display:none;position:absolute;top:100%;left:0;background:var(--teal-dk);min-width:230px;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+nav ul li:hover>ul{display:flex}
+nav ul li ul li a{font-size:.76rem;padding:9px 16px;border-bottom:1px solid rgba(0,0,0,.08);white-space:nowrap}
+nav ul li ul li a:hover{background:rgba(0,0,0,.08);color:var(--white)}
+.header-social{display:flex;gap:14px;flex-shrink:0}
+.header-social a{color:var(--black);font-family:-apple-system,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:color .15s}
+.header-social a:hover{color:var(--white)}
+
+/* HERO */
+.hero{position:relative;height:520px;overflow:hidden;display:flex}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.hero-panel{position:relative;z-index:2;width:52%;background:var(--orange);clip-path:polygon(0 0,85% 0,100% 100%,0 100%);display:flex;align-items:center;padding:56px 72px 56px 56px}
+.hero-text{color:var(--white)}
+.hero-text .eyebrow{font-family:-apple-system,sans-serif;font-size:1.1rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px}
+.hero-text h1{font-family:-apple-system,sans-serif;font-size:4rem;line-height:.95;font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero-text .tagline{font-family:-apple-system,sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;display:block}
+
+/* ARTICLE */
+.article-wrap{max-width:var(--max);margin:52px auto 72px;padding:0 24px}
+.article-wrap h1{font-size:2rem;line-height:1.2;font-weight:normal;margin-bottom:28px}
+.article-wrap h2{font-size:1.45rem;margin:36px 0 14px;font-weight:normal}
+.article-wrap h3{font-size:1.15rem;margin:28px 0 10px;font-weight:bold}
+.article-wrap h4{font-size:1rem;margin:22px 0 8px;font-weight:bold}
+.article-wrap p{margin-bottom:18px}
+.article-wrap ul,.article-wrap ol{margin:0 0 18px 24px}
+.article-wrap li{margin-bottom:6px}
+.article-wrap img{max-width:100%;margin:24px auto;border-radius:2px}
+.article-wrap hr{border:none;border-top:1px solid var(--border);margin:32px 0}
+.article-wrap table{width:100%;border-collapse:collapse;margin-bottom:24px}
+.article-wrap td,.article-wrap th{border:1px solid var(--border);padding:10px 14px;text-align:left}
+.article-wrap th{background:var(--light);font-weight:bold}
+.video-embed{margin:28px 0;width:100%;aspect-ratio:16/9}
+.video-embed iframe{width:100%;height:100%;border:none}
+.article-meta{font-family:-apple-system,sans-serif;font-size:.78rem;color:var(--mid);margin-bottom:32px}
+
+/* HOME GUIDES */
+.guides-section{max-width:var(--max);margin:56px auto;padding:0 24px}
+.section-label{font-family:-apple-system,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+.section-title{font-size:1.7rem;font-weight:normal;margin-bottom:32px}
+.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.guide-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.guide-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.1)}
+.guide-card img{width:100%;height:260px;object-fit:cover}
+.guide-card-body{padding:20px 22px;background:var(--light)}
+.guide-card-body h3{font-size:1rem;font-weight:normal}
+.guide-card-body .arrow{font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--orange);display:block;margin-top:8px}
+.divider{border:none;border-top:1px solid var(--border);max-width:var(--max);margin:0 auto}
+.body-guides{max-width:var(--max);margin:48px auto;padding:0 24px}
+.body-guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.body-link{display:block;padding:13px 16px;border:1px solid var(--border);font-family:-apple-system,sans-serif;font-size:.83rem;color:var(--dark);transition:background .12s,border-color .12s,color .12s}
+.body-link:hover{background:var(--light);border-color:var(--orange);color:var(--orange)}
+.body-link::before{content:'→ ';color:var(--orange)}
+
+/* BLOG INDEX */
+.blog-grid{max-width:var(--max);margin:52px auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.blog-card{display:block;border:1px solid var(--border);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.blog-card-body{padding:18px 20px}
+.blog-card-body h2{font-size:1rem;font-weight:normal;line-height:1.4;margin-bottom:10px}
+.blog-card-body p{font-family:-apple-system,sans-serif;font-size:.82rem;color:var(--mid);line-height:1.5}
+.blog-card-body .read-more{font-family:-apple-system,sans-serif;font-size:.73rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);display:block;margin-top:10px}
+
+/* ABOUT STRIP */
+.about-strip{background:var(--teal);padding:56px 24px;text-align:center;margin-top:48px}
+.about-strip .logo-wrap{display:inline-block;background:var(--black);padding:8px 16px;margin-bottom:20px}
+.about-strip .logo-wrap img{height:36px}
+.about-strip p{max-width:540px;margin:0 auto;font-size:1rem;color:var(--black);line-height:1.8}
+
+/* FOOTER */
+footer{background:var(--black);color:rgba(255,255,255,.5);padding:36px 24px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-copy{font-family:-apple-system,sans-serif;font-size:.75rem}
+.footer-social{display:flex;gap:20px}
+.footer-social a{font-family:-apple-system,sans-serif;font-size:.75rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.07em;transition:color .15s}
+.footer-social a:hover{color:#fff}
+
+/* MOBILE */
+@media(max-width:680px){
+  .guides-grid,.blog-grid{grid-template-columns:1fr}
+  .body-guides-grid{grid-template-columns:1fr 1fr}
+  .hero-panel{width:70%;padding:40px 60px 40px 28px}
+  .hero-text h1{font-size:2.8rem}
+  nav ul{display:none}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a class="logo" href="/"><img src="/images/THE-ACHED-BODY.png" alt="The Ached Body"></a>
+    <nav>
+      <ul>
+        <li><a href="/ultimate-stretch/">How To Stretch</a></li>
+        <li><a href="/ultimate-guide-to-trigger-point-therapy/">How to Trigger Point</a></li>
+        <li>
+          <a href="/body-guides/">Body Guides ▾</a>
+          <ul>
+            <li><a href="/fix-your-feet/">Fix Your Feet</a></li>
+            <li><a href="/fix-your-calves/">Fix Your Calves</a></li>
+            <li><a href="/fix-your-anterior-tibialis/">Fix Your Anterior Tibialis</a></li>
+            <li><a href="/fix-your-hamstrings/">Fix Your Hamstrings</a></li>
+            <li><a href="/fix-your-quads/">Fix Your Quads</a></li>
+            <li><a href="/fix-your-adductors/">Fix Your Adductors</a></li>
+            <li><a href="/fix-your-glutes/">Fix Your Glutes</a></li>
+            <li><a href="/fix-your-hip-flexors/">Fix Your Hip Flexors</a></li>
+            <li><a href="/fix-your-abs/">Fix Your Abs</a></li>
+            <li><a href="/ultimate-guides-to-fix-your-body/">All Guides</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/products-and-services/">Work With Me</a></li>
+      </ul>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">IG</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">FB</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YT</a>
+    </div>
+  </div>
+</header>
+
+
+<div class="article-wrap">
+  <h1>Fix Your Feet</h1>
+  
+  <h1 class="elementor-heading-title elementor-size-default">Fix Your Feet</h1>
+<img alt="understanding the muscles of the feet article" class="attachment-large size-large wp-image-654" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/4.jpg" srcset="/wp-content/uploads/2025/02/4.jpg 300w, /wp-content/uploads/2025/02/4-150x150.jpg 150w" width="300"/>
+<img alt="foot trigger points and how to fix them" class="attachment-large size-large wp-image-652" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/2.jpg" srcset="/wp-content/uploads/2025/02/2.jpg 300w, /wp-content/uploads/2025/02/2-150x150.jpg 150w" width="300"/>
+<img alt="pressure points vs trigger points" class="attachment-large size-large wp-image-653" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/3.jpg" srcset="/wp-content/uploads/2025/02/3.jpg 300w, /wp-content/uploads/2025/02/3-150x150.jpg 150w" width="300"/>
+<img alt="Fixing planter fasciitis" class="attachment-large size-large wp-image-651" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/1.jpg" srcset="/wp-content/uploads/2025/02/1.jpg 300w, /wp-content/uploads/2025/02/1-150x150.jpg 150w" width="300"/>
+<img alt="A Practical Guide to Foot Pressure Points &amp; Trigger Points" class="attachment-large size-large wp-image-751" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/A-Practical-Guide-to-Foot-Pressure-Points-Trigger-Points.png" srcset="/wp-content/uploads/2025/02/A-Practical-Guide-to-Foot-Pressure-Points-Trigger-Points.png 300w, /wp-content/uploads/2025/02/A-Practical-Guide-to-Foot-Pressure-Points-Trigger-Points-150x150.png 150w" width="300"/>
+<img alt="" class="attachment-large size-large wp-image-672" decoding="async" height="300" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="/wp-content/uploads/2025/02/How-Foot-Pressure-Points-Affect-the-Whole-Body-Tools-for-Relief.jpg" srcset="/wp-content/uploads/2025/02/How-Foot-Pressure-Points-Affect-the-Whole-Body-Tools-for-Relief.jpg 300w, /wp-content/uploads/2025/02/How-Foot-Pressure-Points-Affect-the-Whole-Body-Tools-for-Relief-150x150.jpg 150w" width="300"/>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 The Ached Body. All Rights Reserved.</span>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/theachedbody/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/61567178751418" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@achedbody" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
